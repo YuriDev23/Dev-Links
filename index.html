@@ -1,84 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio de Yuri Santos, desenvolvedor web." />
+    <meta name="keywords" content="Yuri Santos, portfólio, desenvolvedor, web" />
     <title>DevLinks</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div id="container">
-      <div id="profile">
-        <img
-          src="./assets/Yuri.png"
-          alt="Foto de Yuri Santos sorrindo, usando camisa preta com um computador ao fundo."
-        />
-        <p>@YuriSantos</p>
-      </div>
+        <header>
+            <div id="profile">
+                <img src="./assets/Yuri.png" alt="Foto de Yuri Santos sorrindo, usando camisa preta com um computador ao fundo." />
+                <p>@YuriSantos</p>
+            </div>
+            <div id="switch" onclick="toggleMode()" aria-label="Alternar modo claro/escuro">
+                <button></button>
+                <span></span>
+            </div>
+        </header>
 
-      <div id="switch" onclick="toggleMode()">
-        <button></button>
-        <span></span>
-      </div>
+        <main>
+            <ul>
+                <li><a href="#">Veja meu portfólio (Em Construção)</a></li>
+                <li><a href="https://github.com/YuriDev23">Veja meu GitHub</a></li>
+                <li><a href="https://www.instagram.com/yuri.psd23/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/yuri-dos-santos-silveira-76b25529b/" target="_blank">LinkedIn</a></li>
+            </ul>
 
-      <ul>
-        <li>
-          <a href="#">Veja meu portfólio (Em Construção)</a>
-        </li>
-        
-        <li>
-          <a href="https://github.com/YuriDev23">Veja meu GitHub</a>
-        </li>
+            <div id="social-links">
+                <a href="https://github.com/YuriDev23" target="_blank" aria-label="GitHub">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/yuri.psd23/" target="_blank" aria-label="Instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/yuri-dos-santos-silveira-76b25529b/" target="_blank" aria-label="LinkedIn">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </div>
+        </main>
 
-        <li>
-          <a href="https://www.instagram.com/yuri.psd23/" target="_blank"
-            >Instagram</a
-          >
-        </li>
-
-        <li>
-          <a href="https://www.linkedin.com/in/yuri-dos-santos-silveira-76b25529b/" target="_blank"
-            >LinkedIn</a
-          >
-        </li>
-      </ul>
-
-      <div id="social-links">
-        <a href="https://github.com/YuriDev23" target="_blank">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-
-        <a href="https://www.instagram.com/yuri.psd23/" target="_blank">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a>
-
-        <a href="https://www.linkedin.com/in/yuri-dos-santos-silveira-76b25529b/" target="_blank">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-      </div>
-
-      <footer>
-        Desenvolvido por @Yuri Santos
-      </footer>
+        <footer>
+            Desenvolvido por @Yuri Santos
+        </footer>
     </div>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./script.js"></script>
-  </body>
+</body>
 </html>
